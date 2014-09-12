@@ -1,0 +1,4 @@
+gcc -Wall -I. -I../lua-5.2.1/src/ -I../ftgl-2.1.3~rc5/src/ -I/usr/include/freetype2/ -pedantic -fpic -std=c99 -c luaftgl.c
+gcc -shared -o luaftgl.so luaftgl.o -l ftgl
+rm luaftgl.o
+
